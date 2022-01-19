@@ -21,6 +21,6 @@ func (s *UserQueryService) FindAll() *[]srvresponse.UserResponse {
 	res, err := s.UserQueryAction.FindAll()
 	util.PanicIfError(err)
 	response := make([]srvresponse.UserResponse, 0)
-	automapper.Map(res, &response)
+	automapper.Map(*res, &response)
 	return &response
 }

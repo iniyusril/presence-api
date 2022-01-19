@@ -52,7 +52,7 @@ func (s *UserServer) FindAll(c echo.Context) error {
 
 	response := srvresponse.Response{
 		Success: true,
-		Message: "user has been saved",
+		Message: "success",
 		Data:    res,
 	}
 	return c.JSON(http.StatusOK, response)
