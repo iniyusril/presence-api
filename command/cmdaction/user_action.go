@@ -15,7 +15,12 @@ func NewUserCommandAction(userRepository repository.UserRepository) UserCommandA
 	}
 }
 
-func (s *UserCommandAction) Save(user entity.User) *entity.User {
-	res, _ := s.UserRepository.Save(user)
-	return res
+func (s *UserCommandAction) Save(user entity.User) (*entity.User, error) {
+	res, err := s.UserRepository.Save(user)
+	return res, err
+}
+
+func (s *UserCommandAction) FindAll() (*[]entity.User, error) {
+	res, err := s.UserRepository.FindAll()
+	return res, err
 }
