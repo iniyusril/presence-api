@@ -8,6 +8,8 @@ require (
 )
 
 require (
+	github.com/go-playground/locales v0.14.0 // indirect
+	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.10.1 // indirect
 	github.com/jackc/pgio v1.0.0 // indirect
@@ -17,10 +19,12 @@ require (
 	github.com/jackc/pgtype v1.9.0 // indirect
 	github.com/jackc/pgx/v4 v4.14.0 // indirect
 	github.com/joho/godotenv v1.4.0 // indirect
+	github.com/leodido/go-urn v1.2.1 // indirect
 	gorm.io/driver/postgres v1.2.3 // indirect
 )
 
 require (
+	github.com/go-playground/validator v9.31.0+incompatible
 	github.com/google/wire v0.5.0
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.4 // indirect
